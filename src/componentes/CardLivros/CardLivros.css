@@ -1,0 +1,21 @@
+.card-livros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0);
+}
+
+.card-livros:hover {
+    transform: scale(1.02);
+}
+
+.genero {
+    color: #996DFF;
+    text-transform: uppercase;
+}
+
+.img-card-livro {
+    width: 200px;
+    height: auto;
+}

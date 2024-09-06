@@ -1,0 +1,16 @@
+.centralizando {
+    margin: auto;
+    max-width: 1500px;    
+}
+
+.dividido-em-duas-colunas {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.sobrepondo-a-segunda-coluna {
+    display: block;
+    margin-top: -40%;
+    z-index: 4;
+}

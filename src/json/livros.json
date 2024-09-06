@@ -1,0 +1,162 @@
+[
+	{
+		"id": 1,
+		"titulo": "Harry Potter e a Pedra Filosofal",
+		"descricao": "Um jovem descobre que é um bruxo no seu aniversário de 11 anos.",
+		"genero_id": "1",
+		"autor_id": "1",
+		"link_imagem": "https:\/\/m.media-amazon.com\/images\/I\/61jgm6ooXzL.AC_UF1000,1000_QL80.jpg",
+		"autor": {
+			"id": 1,
+			"nome": "J.K. Rowling"
+		},
+		"genero": {
+			"id": 1,
+			"nome": "Fantasia"
+		}
+	},
+	{
+		"id": 2,
+		"titulo": "A Guerra dos Tronos",
+		"descricao": "Famílias nobres lutam pelo controle do Trono de Ferro.",
+		"genero_id": "1",
+		"autor_id": "2",
+		"link_imagem": "https:\/\/m.media-amazon.com\/images\/I\/61jgm6ooXzL.AC_UF1000,1000_QL80.jpg",
+		"autor": {
+			"id": 2,
+			"nome": "George R.R. Martin"
+		},
+		"genero": {
+			"id": 1,
+			"nome": "Fantasia"
+		}
+	},
+	{
+		"id": 3,
+		"titulo": "O Hobbit",
+		"descricao": "Um hobbit embarca em uma jornada inesperada para recuperar um tesouro roubado.",
+		"genero_id": "1",
+		"autor_id": "3",
+		"link_imagem": "https:\/\/m.media-amazon.com\/images\/I\/61jgm6ooXzL.AC_UF1000,1000_QL80.jpg",
+		"autor": {
+			"id": 3,
+			"nome": "J.R.R. Tolkien"
+		},
+		"genero": {
+			"id": 1,
+			"nome": "Fantasia"
+		}
+	},
+	{
+		"id": 4,
+		"titulo": "O Iluminado",
+		"descricao": "Uma família se muda para um hotel assombrado durante o inverno.",
+		"genero_id": "6",
+		"autor_id": "4",
+		"link_imagem": "https:\/\/m.media-amazon.com\/images\/I\/61jgm6ooXzL.AC_UF1000,1000_QL80.jpg",
+		"autor": {
+			"id": 4,
+			"nome": "Stephen King"
+		},
+		"genero": {
+			"id": 6,
+			"nome": "Terror"
+		}
+	},
+	{
+		"id": 5,
+		"titulo": "Assassinato no Expresso do Oriente",
+		"descricao": "Um detetive investiga um assassinato em um trem.",
+		"genero_id": "3",
+		"autor_id": "5",
+		"link_imagem": "https:\/\/m.media-amazon.com\/images\/I\/61jgm6ooXzL.AC_UF1000,1000_QL80.jpg",
+		"autor": {
+			"id": 5,
+			"nome": "Agatha Christie"
+		},
+		"genero": {
+			"id": 3,
+			"nome": "Mistério"
+		}
+	},
+	{
+		"id": 6,
+		"titulo": "O Apanhador no Campo de Centeio",
+		"descricao": "Um adolescente conta suas experiências em Nova York.",
+		"genero_id": "8",
+		"autor_id": "6",
+		"link_imagem": "https:\/\/m.media-amazon.com\/images\/I\/61jgm6ooXzL.AC_UF1000,1000_QL80.jpg",
+		"autor": {
+			"id": 6,
+			"nome": "J.D. Salinger"
+		},
+		"genero": {
+			"id": 8,
+			"nome": "Jovem Adulto"
+		}
+	},
+	{
+		"id": 7,
+		"titulo": "O Grande Gatsby",
+		"descricao": "Um milionário misterioso dá festas luxuosas na Nova York dos anos 1920.",
+		"genero_id": "7",
+		"autor_id": "7",
+		"link_imagem": "https:\/\/m.media-amazon.com\/images\/I\/61jgm6ooXzL.AC_UF1000,1000_QL80.jpg",
+		"autor": {
+			"id": 7,
+			"nome": "F. Scott Fitzgerald"
+		},
+		"genero": {
+			"id": 7,
+			"nome": "Ficção Histórica"
+		}
+	},
+	{
+		"id": 8,
+		"titulo": "O Velho e o Mar",
+		"descricao": "Um velho pescador luta contra um marlim gigante na Corrente do Golfo.",
+		"genero_id": "7",
+		"autor_id": "8",
+		"link_imagem": "https:\/\/m.media-amazon.com\/images\/I\/61jgm6ooXzL.AC_UF1000,1000_QL80.jpg",
+		"autor": {
+			"id": 8,
+			"nome": "Ernest Hemingway"
+		},
+		"genero": {
+			"id": 7,
+			"nome": "Ficção Histórica"
+		}
+	},
+	{
+		"id": 9,
+		"titulo": "As Aventuras de Huckleberry Finn",
+		"descricao": "Um garoto e um escravo fugitivo viajam pelo rio Mississippi.",
+		"genero_id": "10",
+		"autor_id": "9",
+		"link_imagem": "https:\/\/m.media-amazon.com\/images\/I\/61jgm6ooXzL.AC_UF1000,1000_QL80.jpg",
+		"autor": {
+			"id": 9,
+			"nome": "Mark Twain"
+		},
+		"genero": {
+			"id": 10,
+			"nome": "Aventura"
+		}
+	},
+	{
+		"id": 10,
+		"titulo": "Orgulho e Preconceito",
+		"descricao": "Uma jovem enfrenta questões de classe social e relacionamentos na Inglaterra do século XIX.",
+		"genero_id": "5",
+		"autor_id": "10",
+		"link_imagem": "https:\/\/m.media-amazon.com\/images\/I\/61jgm6ooXzL.AC_UF1000,1000_QL80.jpg",
+		"autor": {
+			"id": 10,
+			"nome": "Jane Austen"
+		},
+		"genero": {
+			"id": 5,
+			"nome": "Romance"
+		}
+	}
+]

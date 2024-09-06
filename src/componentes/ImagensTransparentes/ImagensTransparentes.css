@@ -1,0 +1,24 @@
+.imagem-trasparente-de-fundo {
+    width: 200px;
+    height: auto;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.dividindo-em-colunas {
+    display: flex;
+    gap: 30px;
+}
+
+.primeira-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.segunda-coluna {
+    display: flex;
+    flex-direction: column;
+    margin-top: -200px;
+    gap: 30px;
+}
