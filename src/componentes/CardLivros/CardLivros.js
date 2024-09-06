@@ -1,9 +1,15 @@
 import './CardLivros.css';
 import livros from "../../json/livros.json";
+import Botao from '../Botao/Botao';
 
 const CardLivros = () => {
+
+
     return (
         <div className="estante-de-livros">
+            
+
+
             {livros.map((livro) => (
                 <div key={livro.id} className='card-livros'>
                     <h3 className='genero'>{livro.genero.nome}</h3>
@@ -17,6 +23,7 @@ const CardLivros = () => {
                     <p>{livro.descricao}</p>
                 </div>
             ))}
+            <Botao descricao="mostrar todos"/>
         </div>
     );
 }

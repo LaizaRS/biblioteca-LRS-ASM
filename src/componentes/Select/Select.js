@@ -1,13 +1,17 @@
 import './Select.css'
 
-import livros from "../../json/livros.json";
 
-const Select = () => {
+
+const Select = ({ options, selecione}) => {
     return (
-        <select >
-            <option />
-            {livros.map(livro => <option key={livro.id}>{livro.titulo}</option>)}
-        </select>
+        <select>
+        <option value="">{selecione}</option>
+        {options.map((option, index) => (
+            <option key={index} value={option}>
+                {option}
+            </option>
+        ))}
+    </select>
     )
 }
 

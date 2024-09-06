@@ -1,5 +1,6 @@
 import CardLivros from '../CardLivros/CardLivros'
 import DescriçaoComFiltro from '../DescricaoComFiltro/DescricaoComFiltro'
+import EstanteDeLivros from '../EstanteDeLivros/EstanteDeLivros'
 
 import ImagensTranparentes from '../ImagensTransparentes/ImagensTransparentes'
 import './OrganizandoNaTela.css'
@@ -16,7 +17,7 @@ const OrganizandoNaTela = () => {
                 </div>
             </div>
             <div className='sobrepondo-a-segunda-coluna'>
-                <CardLivros />
+                <EstanteDeLivros />
             </div>
         </div>
     )
