@@ -5,7 +5,7 @@ import './Select.css'
 const Select = ({ options, selecione, aoAlterado}) => {
     return (
         <select onChange={evento => aoAlterado(evento.target.value)}>
-            <option>{selecione}</option>
+            <option value="">{selecione}</option>
             {options.map((option, index) => (
                 <option key={index} value={option}>
                     {option}
