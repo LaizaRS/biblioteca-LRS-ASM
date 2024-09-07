@@ -2,16 +2,16 @@ import './Select.css'
 
 
 
-const Select = ({ options, selecione}) => {
+const Select = ({ options, selecione, aoAlterado}) => {
     return (
-        <select>
-        <option value="">{selecione}</option>
-        {options.map((option, index) => (
-            <option key={index} value={option}>
-                {option}
-            </option>
-        ))}
-    </select>
+        <select onChange={evento => aoAlterado(evento.target.value)}>
+            <option>{selecione}</option>
+            {options.map((option, index) => (
+                <option key={index} value={option}>
+                    {option}
+                </option>
+            ))}
+        </select>
     )
 }
 

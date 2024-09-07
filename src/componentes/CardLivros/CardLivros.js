@@ -1,14 +1,16 @@
 import './CardLivros.css';
-import livros from "../../json/livros.json";
 
-
-const CardLivros = () => {
-
+const CardLivros = ({ generoSelecionado, autorSelecionado, livros }) => {
+    const livrosFiltrados = livros.filter(livro => {
+        return (
+            (generoSelecionado === "" || livro.genero.nome === generoSelecionado) &&
+            (autorSelecionado === "" || livro.autor.nome === autorSelecionado)
+        );
+    });
 
     return (
         <div className="estante-de-livros">
-
-            {livros.map((livro) => (
+            {livrosFiltrados.map((livro) => (
                 <div key={livro.id} className='card-livros'>
                     <h3 className='genero'>{livro.genero.nome}</h3>
                     <h4>{livro.autor.nome}</h4>
@@ -21,9 +23,9 @@ const CardLivros = () => {
                     <p className='descricao-espaco'>{livro.descricao}</p>
                 </div>
             ))}
-            
         </div>
     );
 }
 
 export default CardLivros;
+
