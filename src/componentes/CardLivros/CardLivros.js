@@ -1,14 +1,12 @@
 import './CardLivros.css';
 import livros from "../../json/livros.json";
-import Botao from '../Botao/Botao';
+
 
 const CardLivros = () => {
 
 
     return (
         <div className="estante-de-livros">
-            
-
 
             {livros.map((livro) => (
                 <div key={livro.id} className='card-livros'>
@@ -19,11 +17,11 @@ const CardLivros = () => {
                         src={livro.link_imagem}
                         alt={`Capa do livro ${livro.titulo}`} 
                     />
-                    <h3>{livro.titulo}</h3>
-                    <p>{livro.descricao}</p>
+                    <h3 className='descricao-espaco'>{livro.titulo}</h3>
+                    <p className='descricao-espaco'>{livro.descricao}</p>
                 </div>
             ))}
-            <Botao descricao="mostrar todos"/>
+            
         </div>
     );
 }

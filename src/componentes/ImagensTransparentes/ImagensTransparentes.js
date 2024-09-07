@@ -9,22 +9,22 @@ const ImagensTranparentes = () => {
                     alt="imagem de livro"
                 />    
                  <img className="imagem-trasparente-de-fundo"
-                    src="../../../imagem-livros-3.jpg"
+                    src="../../../imagem-livros-2.jpg"
                     alt="imagem de livro"
                 />  
                  <img className="imagem-trasparente-de-fundo"
-                    src="../../../imagem-livros-3.jpg"
+                    src="../../../imagem-livros-1.jpg"
                     alt="imagem de livro"
                 />  
             </div>
 
             <div className="segunda-coluna">   
             <img className="imagem-trasparente-de-fundo"
-                    src="../../../imagem-livros-3.jpg"
+                    src="../../../imagem-livros-2.jpg"
                     alt="imagem de livro"
                 />    
                  <img className="imagem-trasparente-de-fundo"
-                    src="../../../imagem-livros-3.jpg"
+                    src="../../../imagem-livros-1.jpg"
                     alt="imagem de livro"
                 />  
                  <img className="imagem-trasparente-de-fundo"
