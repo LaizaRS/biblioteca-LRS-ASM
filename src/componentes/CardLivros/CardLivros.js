@@ -13,7 +13,7 @@ const CardLivros = ({ generoSelecionado, autorSelecionado, livros }) => {
             {livrosFiltrados.map((livro) => (
                 <div key={livro.id} className='card-livros'>
                     <h3 className='genero'>{livro.genero.nome}</h3>
-                    <h4>{livro.autor.nome}</h4>
+                    <h4 className='descricao-espaco'>{livro.autor.nome}</h4>
                     <img 
                         className='img-card-livro'
                         src={livro.link_imagem}

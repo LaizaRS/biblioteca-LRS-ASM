@@ -21,13 +21,16 @@
 .genero {
     color: #996DFF;
     text-transform: uppercase;
+    background: rgba(0, 0, 0, 0);
 }
 
 .img-card-livro {
     width: 200px;
-    height: auto;
+    height: 299.850px;
+    background: rgba(0, 0, 0, 0);
 }
 
 .descricao-espaco {
     width: 200px;
+    background: rgba(0, 0, 0, 0);
 }
