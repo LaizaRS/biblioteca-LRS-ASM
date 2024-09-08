@@ -12,7 +12,8 @@
 		},
 		"genero": {
 			"id": 1,
-			"nome": "Fantasia"
+			"nome": "Fantasia",
+			"font_color": "#D5D5D5"
 		}
 	},
 	{
@@ -28,7 +29,8 @@
 		},
 		"genero": {
 			"id": 1,
-			"nome": "Fantasia"
+			"nome": "Fantasia",
+			"font_color": "#D5D5D5"
 		}
 	},
 	{
@@ -44,7 +46,8 @@
 		},
 		"genero": {
 			"id": 1,
-			"nome": "Fantasia"
+			"nome": "Fantasia",
+			"font_color": "#D5D5D5"
 		}
 	},
 	{
@@ -60,7 +63,8 @@
 		},
 		"genero": {
 			"id": 6,
-			"nome": "Terror"
+			"nome": "Terror",
+			"font_color": "#ff0000"
 		}
 	},
 	{
@@ -76,7 +80,8 @@
 		},
 		"genero": {
 			"id": 3,
-			"nome": "Mistério"
+			"nome": "Mistério",
+			"font_color": "#ffff00"
 		}
 	},
 	{
@@ -92,7 +97,8 @@
 		},
 		"genero": {
 			"id": 8,
-			"nome": "Jovem Adulto"
+			"nome": "Jovem Adulto",
+			"font_color": "#993399"
 		}
 	},
 	{
@@ -108,7 +114,8 @@
 		},
 		"genero": {
 			"id": 7,
-			"nome": "Ficção Histórica"
+			"nome": "Ficção Histórica",
+			"font_color": "#008000"
 		}
 	},
 	{
@@ -124,7 +131,8 @@
 		},
 		"genero": {
 			"id": 7,
-			"nome": "Ficção Histórica"
+			"nome": "Ficção Histórica",
+			"font_color": "#008000"
 		}
 	},
 	{
@@ -140,7 +148,8 @@
 		},
 		"genero": {
 			"id": 10,
-			"nome": "Aventura"
+			"nome": "Aventura",
+			"font_color": "#0000ff"
 		}
 	},
 	{
@@ -156,7 +165,8 @@
 		},
 		"genero": {
 			"id": 5,
-			"nome": "Romance"
+			"nome": "Romance",
+			"font_color": "#fc0fc0"
 		}
 	}
 ]
