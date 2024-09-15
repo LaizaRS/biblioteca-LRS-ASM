@@ -1,10 +1,26 @@
-import Select from "../Select/Select"
-import "./DescricaoComFiltro.css"
 import livros from "../../json/livros.json";
+import Select from "../Select/Select";
+import "./DescricaoComFiltro.css";
 
-const DescricaoComFiltro = ({generoSelecionado, setGeneroSelecionado, autorSelecionado, setAutorSelecionado }) => {
-    const generosUnicos = [...new Set(livros.map((livro) => livro.genero.nome))];
-    const autoresUnicos = [...new Set(livros.map((livro) => livro.autor.nome))];
+const DescricaoComFiltro = ({ generoSelecionado, setGeneroSelecionado, autorSelecionado, setAutorSelecionado }) => {
+    // 1. Extrai todos os gêneros e remove duplicados usando um Set para armazenar ids únicos
+    const idsUnicosGenero = new Set();
+    const idsUnicosAutor = new Set();
+    const generosUnicos = [];
+    const autoresUnicos = [];
+
+    livros.forEach((livro) => {
+        if (!idsUnicosGenero.has(livro.genero.id)) {
+            idsUnicosGenero.add(livro.genero.id);
+            generosUnicos.push(livro.genero);
+
+        }
+
+        if (!idsUnicosAutor.has(livro.autor.id)) {
+            idsUnicosGenero.add(livro.autor.id);
+            autoresUnicos.push(livro.autor);
+        }
+    });
 
     return (
         <div className="DescricaoComFiltro">
@@ -13,16 +29,16 @@ const DescricaoComFiltro = ({generoSelecionado, setGeneroSelecionado, autorSelec
             <p>Assine nossa newsletter e transforme seu espaço de trabalho em um oásis de produtividade!</p>
 
             <form>
-                <Select 
+                <Select
                     valor={generoSelecionado}
-                    selecione="Todos os Generos" 
-                    options={generosUnicos} 
+                    selecione="Todos os Generos"
+                    options={generosUnicos}
                     aoAlterado={valor => setGeneroSelecionado(valor)}
                 />
-                <Select 
+                <Select
                     valor={autorSelecionado}
-                    selecione="Todos os Autores" 
-                    options={autoresUnicos}  
+                    selecione="Todos os Autores"
+                    options={autoresUnicos}
                     aoAlterado={valor => setAutorSelecionado(valor)}
                 />
             </form>

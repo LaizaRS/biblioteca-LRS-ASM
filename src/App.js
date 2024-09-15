@@ -1,11 +1,11 @@
 
-import "./app.css"
+import "./app.css";
 
-import OrganizandoNaTela from "./componentes/OorganizandoNaTela/OrganizandoNaTela";
+import LayoutTelaPrincipal from "./componentes/LayoutTelaPrincipal/LayoutTelaPrincipal";
 function App() {
   return (
     <div className="App">
-    <OrganizandoNaTela />
+      <LayoutTelaPrincipal />
     </div>
   );
 }
