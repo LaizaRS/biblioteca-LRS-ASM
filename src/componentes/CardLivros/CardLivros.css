@@ -1,42 +1,39 @@
-
 .estante-de-livros {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: transparent;
 }
 
 .card-livros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 5;
-    background: rgba(0, 0, 0, 0);
-    margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+  margin-right: 30px;
+  background-color: transparent;
 }
 
 .card-livros:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .genero {
-    color: #996DFF;
-    text-transform: uppercase;
-    background: rgba(0, 0, 0, 0);
-    font-family: "Nerko One", cursive;
-    font-weight: 800;
-    font-style: normal
+  color: #996dff;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-family: "Nerko One", cursive;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .img-card-livro {
-    width: 200px;
-    height: 299.850px;
-    background: rgba(0, 0, 0, 0);
+  width: 200px;
+  height: 299.85px;
+  background-color: transparent;
 }
 
 .descricao-espaco {
-    width: 200px;
-    background: rgba(0, 0, 0, 0);
-
+  width: 200px;
+  background-color: transparent;
 }
-
-

@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "nome": "Ana Souza",
+    "nomeSocial": "Ana Clara",
+    "cpf": "123.456.789-00",
+    "email": "ana.souza@example.com",
+    "telefone": "(11) 91234-5678",
+    "dataNascimento": "1990-05-12",
+    "endereco": {
+      "rua": "Rua das Flores, 123",
+      "bairro": "Jardim Primavera",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "01010-000",
+      "pais": "Brasil"
+    }
+  },
+  {
+    "id": 2,
+    "nome": "Bruno Lima",
+    "nomeSocial": "Bruno Alves",
+    "cpf": "987.654.321-00",
+    "email": "bruno.lima@example.com",
+    "telefone": "(21) 99876-5432",
+    "dataNascimento": "1985-08-25",
+    "endereco": {
+      "rua": "Avenida Central, 456",
+      "bairro": "Centro",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ",
+      "cep": "20020-000",
+      "pais": "Brasil"
+    }
+  },
+  {
+    "id": 3,
+    "nome": "Carla Ferreira",
+    "nomeSocial": "Carla Beatriz",
+    "cpf": "321.654.987-11",
+    "email": "carla.ferreira@example.com",
+    "telefone": "(31) 98765-4321",
+    "dataNascimento": "1993-02-18",
+    "endereco": {
+      "rua": "Rua das Palmeiras, 789",
+      "bairro": "Boa Vista",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "30130-000",
+      "pais": "Brasil"
+    }
+  },
+  {
+    "id": 4,
+    "nome": "Diego Santos",
+    "nomeSocial": "Diego Henrique",
+    "cpf": "159.753.486-22",
+    "email": "diego.santos@example.com",
+    "telefone": "(51) 97654-3210",
+    "dataNascimento": "1991-11-07",
+    "endereco": {
+      "rua": "Travessa da Luz, 321",
+      "bairro": "Cidade Alta",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
+      "cep": "90040-000",
+      "pais": "Brasil"
+    }
+  },
+  {
+    "id": 5,
+    "nome": "Fernanda Oliveira",
+    "nomeSocial": "Fernanda Lopes",
+    "cpf": "741.852.963-33",
+    "email": "fernanda.oliveira@example.com",
+    "telefone": "(41) 96543-2109",
+    "dataNascimento": "1988-07-30",
+    "endereco": {
+      "rua": "Alameda dos Ipês, 654",
+      "bairro": "Parque Verde",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "cep": "80050-000",
+      "pais": "Brasil"
+    }
+  }
+]

@@ -1,15 +1,33 @@
 .centralizando {
-    margin: auto;
-    max-width: 1500px;    
+  margin: auto;
+  width: 75%;
+  position: relative;
 }
 
 .dividido-em-duas-colunas {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+}
+
+.position-relative {
+  position: relative;
+  min-height: 1200px;
+  display: flex;
+}
+.z-index {
+  z-index: 1;
+}
+
+.position-absolute {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  background-color: transparent;
 }
 
 .sobrepondo-a-segunda-coluna {
-    display: block;
-    margin-top: -40%;
-    z-index: 4;
+  background-color: transparent;
+  position: absolute;
+  top: 40%;
+  z-index: 4;
 }

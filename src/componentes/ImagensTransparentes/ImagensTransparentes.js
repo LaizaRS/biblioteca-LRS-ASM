@@ -1,44 +1,50 @@
-import "./ImagensTransparentes.css"
+import "./ImagensTransparentes.css";
 
 const ImagensTranparentes = () => {
-    return (
-        <div className="dividindo-em-colunas">
-            <div className="primeira-coluna">    
-                <img className="imagem-trasparente-de-fundo"
-                    src="../../../imagem-livros-3.jpg"
-                    alt="imagem de livro"
-                />    
-                 <img className="imagem-trasparente-de-fundo"
-                    src="../../../imagem-livros-2.jpg"
-                    alt="imagem de livro"
-                />  
-                 <img className="imagem-trasparente-de-fundo"
-                    src="../../../imagem-livros-1.jpg"
-                    alt="imagem de livro"
-                />  
-            </div>
+  return (
+    <div className="dividindo-em-colunas">
+      <div className="primeira-coluna">
+        <img
+          className="imagem-trasparente-de-fundo"
+          src="../../../imagem-livros-3.jpg"
+          alt="imagem de livro"
+        />
+        <img
+          className="imagem-trasparente-de-fundo"
+          src="../../../imagem-livros-2.jpg"
+          alt="imagem de livro"
+        />
+        <img
+          className="imagem-trasparente-de-fundo"
+          src="../../../imagem-livros-1.jpg"
+          alt="imagem de livro"
+        />
+      </div>
 
-            <div className="segunda-coluna">   
-            <img className="imagem-trasparente-de-fundo"
-                    src="../../../imagem-livros-2.jpg"
-                    alt="imagem de livro"
-                />    
-                 <img className="imagem-trasparente-de-fundo"
-                    src="../../../imagem-livros-1.jpg"
-                    alt="imagem de livro"
-                />  
-                 <img className="imagem-trasparente-de-fundo"
-                    src="../../../imagem-livros-3.jpg"
-                    alt="imagem de livro"
-                />  
-                    <img className="imagem-trasparente-de-fundo"
-                    src="../../../imagem-livros-3.jpg"
-                    alt="imagem de livro"
-                />  
+      <div className="segunda-coluna">
+        <img
+          className="imagem-trasparente-de-fundo"
+          src="../../../imagem-livros-2.jpg"
+          alt="imagem de livro"
+        />
+        <img
+          className="imagem-trasparente-de-fundo"
+          src="../../../imagem-livros-1.jpg"
+          alt="imagem de livro"
+        />
+        <img
+          className="imagem-trasparente-de-fundo"
+          src="../../../imagem-livros-3.jpg"
+          alt="imagem de livro"
+        />
+        <img
+          className="imagem-trasparente-de-fundo"
+          src="../../../imagem-livros-3.jpg"
+          alt="imagem de livro"
+        />
+      </div>
+    </div>
+  );
+};
 
-            </div>
-        </div>
-    )
-}
-
-export default ImagensTranparentes
+export default ImagensTranparentes;

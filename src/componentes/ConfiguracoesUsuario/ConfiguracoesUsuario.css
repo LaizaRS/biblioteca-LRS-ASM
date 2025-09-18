@@ -1,0 +1,39 @@
+.configuracoes-usuario {
+  position: relative;
+}
+
+form {
+  width: 97%;
+  z-index: 2;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 10%;
+  background-color: transparent;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  gap: 5px;
+  background-color: transparent;
+}
+
+label {
+  margin: 10px 0 0 0;
+  background-color: transparent;
+}
+
+input {
+  padding: 10px;
+  background-color: #858585;
+  border-radius: 15px;
+}
+
+input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}

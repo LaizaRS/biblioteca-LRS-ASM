@@ -1,9 +1,13 @@
-import livros from "../../json/livros.json";
+import livros from "../../../json/livros.json";
 import Select from "../Select/Select";
 import "./DescricaoComFiltro.css";
 
-const DescricaoComFiltro = ({ generoSelecionado, setGeneroSelecionado, autorSelecionado, setAutorSelecionado }) => {
-    // 1. Extrai todos os gêneros e remove duplicados usando um Set para armazenar ids únicos
+const DescricaoComFiltro = ({ 
+    generoSelecionado, 
+    setGeneroSelecionado, 
+    autorSelecionado, 
+    setAutorSelecionado 
+}) => {
     const idsUnicosGenero = new Set();
     const idsUnicosAutor = new Set();
     const generosUnicos = [];
