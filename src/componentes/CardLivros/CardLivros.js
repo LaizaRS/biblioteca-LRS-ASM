@@ -1,10 +1,10 @@
-import "./CardLivros.css";
+import './CardLivros.css';
 
 const CardLivros = ({ generoSelecionado, autorSelecionado, livros }) => {
   const livrosFiltrados = livros.filter((livro) => {
     return (
-      (generoSelecionado === "" || livro.genero.nome === generoSelecionado) &&
-      (autorSelecionado === "" || livro.autor.nome === autorSelecionado)
+      (generoSelecionado === '' || livro.genero.nome === generoSelecionado) &&
+      (autorSelecionado === '' || livro.autor.nome === autorSelecionado)
     );
   });
 

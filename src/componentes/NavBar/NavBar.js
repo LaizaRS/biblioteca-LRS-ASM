@@ -1,7 +1,7 @@
-import { FaCartPlus, FaSearch } from "react-icons/fa";
-import { IoLogOutOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
-import "./navBar.css";
+import { FaCartPlus, FaSearch } from 'react-icons/fa';
+import { IoLogOutOutline } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
+import './navBar.css';
 
 const NavBar = () => {
   return (

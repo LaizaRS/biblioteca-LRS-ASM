@@ -1,4 +1,4 @@
-import "./Select.css";
+import './Select.css';
 
 const Select = ({ options, selecione, aoAlterado }) => {
   return (

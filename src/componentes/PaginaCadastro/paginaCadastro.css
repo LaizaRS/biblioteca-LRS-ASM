@@ -1,0 +1,81 @@
+.titulo-cadastro {
+  text-align: center;
+  margin: 40px 0 0 0;
+  z-index: 3;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.formulario-cadastro {
+  width: 97%;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.display-flex-formulario-cadastro {
+  background-color: transparent;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+form {
+  z-index: 2;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 300px;
+  max-width: 500px;
+  gap: 5px;
+
+  padding: 15px;
+  background-color: transparent;
+  margin: 0 20px 40px 20px;
+}
+
+label {
+  margin: 10px 0 0 0;
+  background-color: transparent;
+}
+
+input {
+  padding: 10px;
+  background-color: #858585;
+  border-radius: 15px;
+}
+
+input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.botoes-cadastrar-voltar-loguin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.voltar-login,
+.cadastrar {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #996dff;
+  width: 250px;
+  text-align: center;
+}
+
+.voltar-login:hover,
+.cadastrar:hover {
+  background-color: #7a57cb;
+  cursor: pointer;
+}

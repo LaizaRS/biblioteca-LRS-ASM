@@ -1,15 +1,15 @@
-import { useState } from "react";
-import livros from "../../json/livros.json";
-import CardLivros from "../CardLivros/CardLivros";
-import DescricaoComFiltro from "./DescricaoComFiltro/DescricaoComFiltro";
+import { useState } from 'react';
+import livros from '../../json/livros.json';
+import CardLivros from '../CardLivros/CardLivros';
+import DescricaoComFiltro from './DescricaoComFiltro/DescricaoComFiltro';
 
-import ImagensTranparentes from "../ImagensTransparentes/ImagensTransparentes";
-import NavBar from "../NavBar/NavBar";
-import "./LayoutTelaPrincipal.css";
+import ImagensTranparentes from '../ImagensTransparentes/ImagensTransparentes';
+import NavBar from '../NavBar/NavBar';
+import './LayoutTelaPrincipal.css';
 
 const LayoutTelaPrincipal = () => {
-  const [generoSelecionado, setGeneroSelecionado] = useState("");
-  const [autorSelecionado, setAutorSelecionado] = useState("");
+  const [generoSelecionado, setGeneroSelecionado] = useState('');
+  const [autorSelecionado, setAutorSelecionado] = useState('');
 
   return (
     <div className="centralizando">

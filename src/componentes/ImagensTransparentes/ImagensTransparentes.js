@@ -1,4 +1,4 @@
-import "./ImagensTransparentes.css";
+import './ImagensTransparentes.css';
 
 const ImagensTranparentes = () => {
   return (
