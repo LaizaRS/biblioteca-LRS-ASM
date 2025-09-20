@@ -20,11 +20,11 @@ const NavBar = () => {
           </li>
 
           <li>
-            <Link to="/ListaDeDesejos">Lista de Desejos</Link>
+            <Link to="/lista-de-desejos">Lista de Desejos</Link>
           </li>
 
           <li>
-            <Link to="/ConfiguracoesUsuario">Nome do perfil</Link>
+            <Link to="/meu-perfil">Nome do perfil</Link>
           </li>
 
           <li>
