@@ -1,0 +1,146 @@
+.log-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.bacground-shape{
+  padding: 30px;
+  background-color: rgb(35, 35, 35);
+  border-radius: 15px;
+}
+
+.faca-seu-login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+}
+
+.log-in .faca-seu-login .login-icone,
+.faca-seu-login h1 {
+  color:#996dff; 
+  background-color: transparent;
+  font-size: xx-large;
+}
+
+.bacground-shape p {
+  color:#996dff; 
+  background-color: transparent;
+  margin-top: 5px;
+}
+
+.e-mail-senha {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.e-mail-senha input {
+  outline: none;
+}
+
+.input-senha {
+  background-color: #717171;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input-senha input {
+  border: none;
+  background-color: transparent;
+}
+
+.log-in .bacground-shape .e-mail-senha .input-senha .background-color-tranparent {
+  border: none;
+  background-color: #717171;
+  border-bottom: 1px solid #717171 ;
+  cursor: pointer;
+  height: max-content;
+  padding: 2px 0 0 0;
+}
+
+.log-in .bacground-shape .e-mail-senha .input-senha .background-color-tranparent .visivel,
+.log-in .bacground-shape .e-mail-senha .input-senha .background-color-tranparent .escondido{
+  background-color: transparent;
+  margin: 0;
+  font-size: large;
+  height: 100%;
+}
+
+.log-in .bacground-shape .e-mail-senha .input-senha .background-color-tranparent .escondido {
+  display: none;
+}
+
+.log-in .bacground-shape .e-mail-senha .input-senha .cadeado-icone
+ {
+  background-color: transparent;
+}
+
+.lembre-me-esqueci-senha {
+  background-color: transparent;
+  margin: 5px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lembre-me {
+  background-color: transparent;
+}
+
+.lembre-me input {
+  margin: 0 5px 0 5px;
+}
+
+.esqueci-senha {
+  background-color: transparent;
+  color: #996dff;
+}
+
+.esqueci-senha:hover {
+  cursor: pointer;
+  color: #7a57cb;
+  text-decoration: underline solid #7a57cb;
+}
+
+.botao-entrar {
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #996dff;
+}
+
+.botao-entrar:hover{
+  cursor: pointer;
+  background-color: #7a57cb;
+}
+
+.nao-tem-uma-conta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: transparent;
+}
+
+.link-cadastro {
+  background-color: transparent;
+  margin: 2px 0 0 0;
+  font-weight: 600;
+  color: #996dff;
+}
+
+.link-cadastro:hover {
+   cursor: pointer;
+  color: #7a57cb;
+  text-decoration: underline solid #7a57cb;
+}

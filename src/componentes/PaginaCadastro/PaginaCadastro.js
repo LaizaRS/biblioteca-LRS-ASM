@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import LogIn from '../Log-in/Log-in';
 import './paginaCadastro.css';
 
 const PaginaCadastro = () => {
@@ -14,11 +13,7 @@ const PaginaCadastro = () => {
               <legend>Dados Pessoais</legend>
               <input name="nome" type="text" placeholder="Digite seu Nome" />
               <label>Nome Social</label>
-              <input
-                name="nome"
-                type="text"
-                placeholder="Digite seu Nome Social"
-              />
+              <input name="nome" type="text" placeholder="Digite seu Nome Social" />
               <label>CPF</label>
               <input type="text" placeholder="Digite seu CPF" />
               <label>Data de Dascimento</label>
@@ -30,12 +25,7 @@ const PaginaCadastro = () => {
             <fieldset>
               <legend> Endereço</legend>
               <label>CEP</label>
-              <input
-                name="cep"
-                id="1"
-                type="text"
-                placeholder="Digite seu CEP"
-              />
+              <input name="cep" id="1" type="text" placeholder="Digite seu CEP" />
               <label>Rua</label>
               <input type="text" placeholder="Digite sua Rua" />
               <label>Bairro</label>
@@ -43,11 +33,7 @@ const PaginaCadastro = () => {
               <label>Complemento</label>
               <input type="text" placeholder="Complemento" />
               <label>Cidade</label>
-              <input
-                type="text"
-                label
-                placeholder="Digite o nome da sua Cidade"
-              />
+              <input type="text" label placeholder="Digite o nome da sua Cidade" />
               <label>Estado</label>
               <input type="text" placeholder="Digite o nome do seu Estado" />
               <label>País</label>
@@ -68,7 +54,7 @@ const PaginaCadastro = () => {
             <button type="submit" className="cadastrar">
               Cadastrar
             </button>
-            <Link to={`/LogIn`} element={<LogIn />} className="voltar-login">
+            <Link to="/login" className="voltar-login">
               Já possuo uma conta
             </Link>
           </div>
