@@ -39,21 +39,7 @@ fieldset {
   margin: 0 20px 40px 20px;
 }
 
-label {
-  margin: 10px 0 0 0;
-  background-color: transparent;
-}
 
-input {
-  padding: 10px;
-  background-color: #858585;
-  border-radius: 15px;
-}
-
-input::placeholder {
-  color: #ffffff;
-  opacity: 1;
-}
 
 .botoes-cadastrar-voltar-loguin {
   display: flex;

@@ -40,10 +40,6 @@
   margin-top: 15px;
 }
 
-.e-mail-senha input {
-  outline: none;
-}
-
 .input-senha {
   background-color: #717171;
   width: 100%;
@@ -51,37 +47,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-.input-senha input {
-  border: none;
-  background-color: transparent;
-}
-
-.log-in .bacground-shape .e-mail-senha .input-senha .background-color-tranparent {
-  border: none;
-  background-color: #717171;
-  border-bottom: 1px solid #717171 ;
-  cursor: pointer;
-  height: max-content;
-  padding: 2px 0 0 0;
-}
-
-.log-in .bacground-shape .e-mail-senha .input-senha .background-color-tranparent .visivel,
-.log-in .bacground-shape .e-mail-senha .input-senha .background-color-tranparent .escondido{
-  background-color: transparent;
-  margin: 0;
-  font-size: large;
-  height: 100%;
-}
-
-.log-in .bacground-shape .e-mail-senha .input-senha .background-color-tranparent .escondido {
-  display: none;
-}
-
-.log-in .bacground-shape .e-mail-senha .input-senha .cadeado-icone
- {
-  background-color: transparent;
 }
 
 .lembre-me-esqueci-senha {
@@ -94,13 +59,18 @@
 
 .lembre-me {
   background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin: -15px;
+  
 }
 
 .lembre-me input {
-  margin: 0 5px 0 5px;
+  margin: 10px 5px 0 5px;
 }
 
 .esqueci-senha {
+  margin: 10px 5px 0 0;
   background-color: transparent;
   color: #996dff;
 }
