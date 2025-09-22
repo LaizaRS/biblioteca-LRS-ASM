@@ -1,0 +1,30 @@
+.input-senha {
+  background-color: #717171;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input-senha input {
+  width: 80%;
+  border: none;
+  background-color: transparent;
+}
+
+.background-color-tranparent {
+  border: none;
+  background-color: #717171;
+  border-bottom: 1px solid #717171 ;
+  cursor: pointer;
+  height: max-content;
+  padding: 2px 0 0 0;
+}
+
+.senha-icone {
+  background-color: transparent;
+  margin: 0;
+  font-size: large;
+  height: 100%;
+}
+
