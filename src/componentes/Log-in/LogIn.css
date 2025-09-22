@@ -75,7 +75,7 @@
   height: 100%;
 }
 
-.log-in .bacground-shape .e-mail-senha .input-senha .background-color-tranparent .escondido {
+.log-in .bacground-shape .e-mail-senha .input-senha .background-color-tranparent .display-none {
   display: none;
 }
 
