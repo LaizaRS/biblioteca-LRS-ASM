@@ -1,9 +1,12 @@
 import { FaCartPlus, FaSearch } from 'react-icons/fa';
 import { IoLogOutOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../contexts/AuthContext';
 import './navBar.css';
 
 const NavBar = () => {
+  const { logout } = useAuth();
+
   return (
     <header className="header">
       <div className="logo">
@@ -34,7 +37,7 @@ const NavBar = () => {
           </li>
 
           <li>
-            <button>
+            <button onClick={logout}>
               <IoLogOutOutline className="icone-navbar" />
             </button>
           </li>

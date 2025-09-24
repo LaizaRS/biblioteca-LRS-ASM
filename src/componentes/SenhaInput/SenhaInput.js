@@ -14,6 +14,7 @@ const SenhaInput = ({ placeholderSenha, valueSenha, onChangeSenha }) => {
       <label>Senha</label>
       <div className="input-senha">
         <input
+          name="senha"
           type={mostrar ? 'text' : 'password'}
           placeholder={placeholderSenha}
           value={valueSenha}
@@ -24,7 +25,7 @@ const SenhaInput = ({ placeholderSenha, valueSenha, onChangeSenha }) => {
           className="background-color-tranparent"
           onClick={alternarVisibilidade}
         >
-          {mostrar ? <LuEyeOff className="senha-icone" /> : <LuEye className="senha-icone" />}
+          {mostrar ? <LuEye className="senha-icone" /> : <LuEyeOff className="senha-icone" />}
         </button>
       </div>
     </div>

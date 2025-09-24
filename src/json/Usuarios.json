@@ -7,6 +7,7 @@
     "email": "ana.souza@example.com",
     "telefone": "(11) 91234-5678",
     "dataNascimento": "1990-05-12",
+    "senha": "Ana123@2025",
     "endereco": {
       "rua": "Rua das Flores, 123",
       "bairro": "Jardim Primavera",
@@ -24,6 +25,7 @@
     "email": "bruno.lima@example.com",
     "telefone": "(21) 99876-5432",
     "dataNascimento": "1985-08-25",
+    "senha": "Bruno@1985",
     "endereco": {
       "rua": "Avenida Central, 456",
       "bairro": "Centro",
@@ -41,6 +43,7 @@
     "email": "carla.ferreira@example.com",
     "telefone": "(31) 98765-4321",
     "dataNascimento": "1993-02-18",
+    "senha": "Carla@1993",
     "endereco": {
       "rua": "Rua das Palmeiras, 789",
       "bairro": "Boa Vista",
@@ -58,6 +61,7 @@
     "email": "diego.santos@example.com",
     "telefone": "(51) 97654-3210",
     "dataNascimento": "1991-11-07",
+    "senha": "Diego@1991",
     "endereco": {
       "rua": "Travessa da Luz, 321",
       "bairro": "Cidade Alta",
@@ -75,6 +79,7 @@
     "email": "fernanda.oliveira@example.com",
     "telefone": "(41) 96543-2109",
     "dataNascimento": "1988-07-30",
+    "senha": "Fer@1988",
     "endereco": {
       "rua": "Alameda dos Ipês, 654",
       "bairro": "Parque Verde",
@@ -83,5 +88,24 @@
       "cep": "80050-000",
       "pais": "Brasil"
     }
+  }, 
+  {
+    "id": 6,
+    "nome": "Laiza Rocha Saraiva Moreira",
+    "nomeSocial": "Laiza",
+    "cpf": "000.000.000-00",
+    "email": "l.aiza.saraiva@gmail.com",
+    "telefone": "(62) 99999-9999",
+    "dataNascimento": "1995-06-30",
+    "senha": "123456",
+    "endereco": {
+      "rua": "rua, 654",
+      "bairro": "Parque Verde",
+      "cidade": "Anápolis",
+      "estado": "GO",
+      "cep": "75144-000",
+      "pais": "Brasil"
+    }
   }
+  
 ]

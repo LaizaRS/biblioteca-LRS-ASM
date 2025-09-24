@@ -1,10 +1,10 @@
 import './TextoImput.css';
 
-const TextoImput = ({ label, inputType, placeholder, value, onChange }) => {
+const TextoImput = ({ label, ...props }) => {
   return (
     <div className="input-flex">
       <label>{label}</label>
-      <input type={inputType} placeholder={placeholder} value={value} onChange={onChange} />
+      <input {...props} />
     </div>
   );
 };

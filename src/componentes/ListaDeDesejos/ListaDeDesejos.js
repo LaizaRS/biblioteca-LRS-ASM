@@ -7,9 +7,7 @@ const ListaDeDesejos = () => {
     <div className="centralizando">
       <div className="lista-de-desejos">
         <NavBar />
-        <div className="imagens-transparentes-fora-tela-inicio">
-          <ImagensTranparentes />
-        </div>
+    
       </div>
     </div>
   );
