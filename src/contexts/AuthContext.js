@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import usuarios from '../json/Usuarios.json'; 
 
 const AuthContext = createContext();
 
@@ -10,10 +11,14 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
 
   const login = (email, senha) => {
-    if (email === 'l.aiza.saraiva@gmail.com' && senha === '123456') {
-      setUser({ email });
+    
+    const usuarioEncontrado = usuarios.find((u) => u.email === email && u.senha === senha);
+
+    if (usuarioEncontrado) {
+      setUser(usuarioEncontrado); 
       return true;
     }
+
     return false;
   };
 

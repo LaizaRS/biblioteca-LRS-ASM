@@ -1,0 +1,12 @@
+.configuracoes-usuario {
+  position: relative;
+}
+
+.formulario-configuracoes {
+  position: absolute;
+  background-color: transparent;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
