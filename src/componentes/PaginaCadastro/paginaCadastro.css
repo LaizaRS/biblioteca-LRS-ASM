@@ -21,11 +21,12 @@
   flex-wrap: wrap;
 }
 
-form {
+
+/* form {
   z-index: 2;
   color: #ffffff;
   background-color: transparent;
-}
+} */
 
 fieldset {
   display: flex;

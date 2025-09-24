@@ -40,6 +40,13 @@
   margin-top: 15px;
 }
 
+form {
+  z-index: 2;
+  color: #ffffff;
+  background-color: transparent;
+  min-width: 300px;
+}
+
 .input-senha {
   background-color: #717171;
   width: 100%;
