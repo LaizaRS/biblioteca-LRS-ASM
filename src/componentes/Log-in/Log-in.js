@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IoLogInOutline } from 'react-icons/io5';
+import { TbLogin } from "react-icons/tb";
 import { Link, useNavigate } from 'react-router-dom';
 
 import { useAuth } from '../../contexts/AuthContext';
@@ -29,7 +29,7 @@ const LogIn = () => {
     <div className="log-in">
       <div className="bacground-shape">
         <div className="faca-seu-login">
-          <IoLogInOutline className="login-icone" />
+          <TbLogin className="login-icone" />
           <h1>Faça Seu login</h1>
         </div>
         <p>Entre com suas informações de cadastro.</p>
