@@ -2,21 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid;
+  border: 1px solid #fff;
   padding: 10px;
   border-radius: 15px;
   background-color: transparent;
   min-width: 300px;
 }
 
-.display-flex-configuracoes:hover {
-  background-color: rgba(0, 0, 0, 0.668);
-}
-
 .p-configuracoes {
   background-color: transparent;
 }
-
 
 .botao-configuracoes {
   border: none;

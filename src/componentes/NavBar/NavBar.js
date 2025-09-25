@@ -26,26 +26,10 @@ const NavBar = () => {
             </li>
 
             <li>
-              <Link to="/lista-de-desejos">Lista de Desejos</Link>
-            </li>
-
-            <li>
               <Link to="/login" title="Faça o login">
                 {' '}
                 <TbLogin className="icone-navbar" />
               </Link>
-            </li>
-
-            <li>
-              <button title="Carrinho">
-                <FaCartPlus className="icone-navbar" />
-              </button>
-            </li>
-
-            <li>
-              <button onClick={logout} title="Sair">
-                <TbLogin2 className="icone-navbar" />
-              </button>
             </li>
           </ul>
         </nav>

@@ -1,6 +1,7 @@
 .configuracoes-usuario {
   position: relative;
   background-color: transparent;
+  width: 100%;
 }
 
 .formulario-configuracoes {
@@ -9,57 +10,52 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: transparent;
   width: 100%;
-  background-color: transparent;
-}
-
-.lista-configuracos {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  background-color: transparent;
-}
-
-.lista-configuracos p {
-  background-color: transparent;
-}
-
-.coluns-formulario-configuracoes-usuario {
-  display: flex;
-  gap: 20px;
-  background-color: transparent;
-  flex-wrap: wrap;
-}
-
-.informacoes-imutaveis,
-.informacoes-contato,
-.informacoes-endereco {
-  background-color: transparent;
-  display: flex;
-  gap: 20px;
 }
 
 .informacoes-imutaveis button {
   display: none;
 }
 
-.min-widit {
-  min-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-grow: 1;
-}
-
-.atualizar-configuracoes-endereco {
+.botao-atualizar-configuracoes-endereco {
   background-color: #996dff;
   border: none;
-  margin: 10px 0 0 0;
+  margin: 42px 0 0 0;
   padding: 10px;
   border-radius: 15px;
+  min-width: 300px;
 }
 
-.atualizar-configuracoes-endereco:hover {
+.botao-atualizar-configuracoes-endereco:hover {
   cursor: pointer;
   background-color: #7a57cb;
+}
+
+.minimo-widit-input-configuracoes {
+  min-width: 300px;
+  background-color: transparent;
+}
+
+.input-background-color{
+    background-color: #858585c8;
+}
+
+
+.informacoes-imutaveis,
+.display-flex-configuracoes-row,
+.min-widit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;   
+  gap: 20px;
+  background-color: transparent;
+  z-index: 900;
+}
+
+.padding-vinte,
+.min-widit {
+  padding: 20px 0 20px 0;
 }

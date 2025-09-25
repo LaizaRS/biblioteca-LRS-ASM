@@ -46,7 +46,8 @@ const LogIn = () => {
           <div className="e-mail-senha">
             <SenhaInput
               name='senha'
-              placeholderSenha="Digite Sua Senha"
+              autoComplete="123"
+              placeholder="Digite Sua Senha"
               valueSenha={senha}
               onChangeSenha={(e) => setSenha(e.target.value)}
             />
