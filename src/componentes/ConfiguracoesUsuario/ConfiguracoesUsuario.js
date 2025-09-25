@@ -12,7 +12,7 @@ const ConfiguracoesUsuario = () => {
   const [nick, setNick] = useState('');
   const [mail, setMail] = useState('');
   const [celular, setCelular] = useState('');
-  
+
   const [rua, setRua] = useState('');
   const [bairro, setBairro] = useState('');
   const [numero, setNumero] = useState('');
@@ -26,29 +26,26 @@ const ConfiguracoesUsuario = () => {
     return <p>Você precisa estar logado!</p>;
   }
 
-const handleAtualizarDados = (e) => {
-  e.preventDefault();
+  const handleAtualizarDados = (e) => {
+    e.preventDefault();
 
-  const dadosAtualizados = {};
+    const dadosAtualizados = {};
+    if (nick) dadosAtualizados.nick = nick;
+    if (mail) dadosAtualizados.mail = mail;
+    if (celular) dadosAtualizados.celular = celular;
 
-  
-  if (nick) dadosAtualizados.nick = nick;
-  if (mail) dadosAtualizados.mail = mail;
-  if (celular) dadosAtualizados.celular = celular;
+    dadosAtualizados.endereco = {};
+    if (rua) dadosAtualizados.endereco.rua = rua;
+    if (bairro) dadosAtualizados.endereco.bairro = bairro;
+    if (numero) dadosAtualizados.endereco.numero = numero;
+    if (complemento) dadosAtualizados.endereco.complemento = complemento;
+    if (cidade) dadosAtualizados.endereco.cidade = cidade;
+    if (cep) dadosAtualizados.endereco.cep = cep;
+    if (estado) dadosAtualizados.endereco.estado = estado;
+    if (pais) dadosAtualizados.endereco.pais = pais;
 
-  dadosAtualizados.endereco = {};
-  if (rua) dadosAtualizados.endereco.rua = rua;
-  if (bairro) dadosAtualizados.endereco.bairro = bairro;
-  if (numero) dadosAtualizados.endereco.numero = numero;
-  if (complemento) dadosAtualizados.endereco.complemento = complemento;
-  if (cidade) dadosAtualizados.endereco.cidade = cidade;
-  if (cep) dadosAtualizados.endereco.cep = cep;
-  if (estado) dadosAtualizados.endereco.estado = estado;
-  if (pais) dadosAtualizados.endereco.pais = pais;
-
-  console.log("Dados atualizados:", dadosAtualizados);
-};
-  
+    console.log('Dados atualizados:', dadosAtualizados);
+  };
 
   return (
     <div className="centralizando">
@@ -69,7 +66,6 @@ const handleAtualizarDados = (e) => {
                 <div className="display-flex-configuracoes-row">
                   <TextoImput
                     className="minimo-widit-input-configuracoes input-background-color"
-                
                     label="Nome"
                     type="text"
                     placeholder={user.nomeSocial}
@@ -172,10 +168,7 @@ const handleAtualizarDados = (e) => {
                     onChange={(e) => setPais(e.target.value)}
                   />
 
-                  <button
-                    type="submit"
-                    className="botao-atualizar-configuracoes-endereco"
-                  >
+                  <button type="submit" className="botao-atualizar-configuracoes-endereco">
                     Salvar Atualições
                   </button>
                 </div>
