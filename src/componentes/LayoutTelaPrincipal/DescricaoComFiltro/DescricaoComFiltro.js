@@ -28,7 +28,7 @@ const DescricaoComFiltro = ({
   return (
     <div className="DescricaoComFiltro">
       <h3 className="cor-roxa">newsletter exclusiva</h3>
-      <h1 className="margin-top-e-botton-32px">Biblioteca LRS-ASM</h1>
+      <h1 className="margin-top-e-botton-32px">Livraria LRS-GNBR</h1>
       <p>
         Assine nossa newsletter e transforme seu espaço de trabalho em um oásis de produtividade!
       </p>
