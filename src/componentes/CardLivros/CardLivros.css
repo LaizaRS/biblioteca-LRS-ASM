@@ -26,10 +26,14 @@
 }
 
 .titulo-card {
+  display: flex;
+  align-items: center;
+ text-align: start;
   width: 200px;
   font-size: medium;
   background-color: transparent;
   margin: 5px 0 0 0 ;
+  height: 35px;
 }
 
 .preco-card{
@@ -67,6 +71,10 @@
 .botao-card:hover {
   cursor: pointer;
   background-color: #7a57cb;
+}
+
+.botao-card:disabled {
+ display:none;
 }
 
 .display-flex-card-livro {

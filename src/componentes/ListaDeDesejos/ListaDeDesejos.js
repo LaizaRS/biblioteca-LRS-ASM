@@ -13,7 +13,7 @@ const ListaDeDesejos = () => {
         <h3>CSS quebrado não pode tirar esse titulo</h3>
         <div className="lista-de-desejos">
           <div>
-            <h1>Você ainda não possui Favoritos</h1>
+            <h1>Você ainda não possui uma Lista de Desejos</h1>
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@ const ListaDeDesejos = () => {
       <h3>CSS quebrado não pode tirar esse titulo</h3>
       <div className="lista-de-desejos">
         <div>
-          <h1 className='margin-bottom-favoritos'>Meus Favoritos</h1>
+          <h1 className='margin-bottom-favoritos'>Minha Lista de Desejos</h1>
           <CardLivros  generoSelecionado="" autorSelecionado="" livros={favoritos} />
         </div>
       </div>

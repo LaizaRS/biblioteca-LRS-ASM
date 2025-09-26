@@ -1,16 +1,18 @@
-import { FaCartPlus, FaRegStar, FaStar } from "react-icons/fa";
-import "./CardLivros.css";
-import { useNavigate } from "react-router-dom";
-import { useFavorito } from "../../contexts/Favoritos"; 
+import { FaCartPlus, FaRegStar, FaStar } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../contexts/AuthContext';
+import { useFavorito } from '../../contexts/Favoritos';
+import './CardLivros.css';
 
 const CardLivros = ({ generoSelecionado, autorSelecionado, livros }) => {
-  const { favoritos, toggleFavorito } = useFavorito(); 
+  const { user } = useAuth();
+  const { favoritos, toggleFavorito } = useFavorito();
   const navigate = useNavigate();
 
   const livrosFiltrados = livros.filter((livro) => {
     return (
-      (generoSelecionado === "" || livro.genero.nome === generoSelecionado) &&
-      (autorSelecionado === "" || livro.autor.nome === autorSelecionado)
+      (generoSelecionado === '' || livro.genero.nome === generoSelecionado) &&
+      (autorSelecionado === '' || livro.autor.nome === autorSelecionado)
     );
   });
 
@@ -36,21 +38,22 @@ const CardLivros = ({ generoSelecionado, autorSelecionado, livros }) => {
             <div className="display-flex-card-livro">
               <h2 className="preco-card">R$: {livro.preco}</h2>
               <div className="nome-preco">
-                <button className="botao-card">
+                <button title='Adicionar ao carrinho' disabled={!user} className="botao-card">
                   <FaCartPlus className="icone-card" />
                 </button>
 
                 <button
+                  disabled={!user}
                   className="botao-card"
                   onClick={(e) => {
-                    e.stopPropagation(); // não navega ao clicar no botão
+                    e.stopPropagation(); 
                     toggleFavorito(livro);
                   }}
                 >
                   {ehFavorito ? (
-                    <FaStar className="icone-card icone-position-absolute" />
+                    <FaStar title='Retirar dos Favoritos' className="icone-card icone-position-absolute" />
                   ) : (
-                    <FaRegStar className="icone-card icone-position-absolute" />
+                    <FaRegStar title='Adicionar aos Favoritos' className="icone-card icone-position-absolute" />
                   )}
                 </button>
               </div>
