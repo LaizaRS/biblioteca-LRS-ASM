@@ -6,36 +6,44 @@ import ListaDeDesejos from './componentes/ListaDeDesejos/ListaDeDesejos.js';
 import LogIn from './componentes/Log-in/Log-in.js';
 import PaginaCadastro from './componentes/PaginaCadastro/PaginaCadastro.js';
 import { AuthProvider } from './contexts/AuthContext';
-import ProtectedRoute from './routes/ProtectedRoute';
+import { FavoritoProvider } from './contexts/Favoritos.js';
+
 import ProdutoAberto from './componentes/ProdutoAberto/ProdutoAberto.js';
+import ProtectedRoute from './routes/ProtectedRoute';
 
 function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
-        <Routes className="app">
-          <Route path="/" element={<LayoutTelaPrincipal />}></Route>
-          <Route
-            path="/lista-de-desejos"
-            element={
-              <ProtectedRoute>
-                <ListaDeDesejos />{' '}
-              </ProtectedRoute>
-            }
-          ></Route>
-          <Route
-            path="/meu-perfil"
-            element={
-              <ProtectedRoute>
-                <ConfiguracoesUsuario />
-              </ProtectedRoute>
-            }
-          ></Route>
-          <Route path="/cadastro-usuario" element={<PaginaCadastro />}></Route>
-          <Route path="/login" element={<LogIn />}></Route>
-          <Route path="/produto-aberto/:id" element={<ProdutoAberto />}></Route>
-          <Route path="*" element={<div>Página não encontrada</div>} />
-        </Routes>
+        <FavoritoProvider>
+          <Routes className="app">
+            <Route path="/" element={<LayoutTelaPrincipal />} />
+
+            <Route
+              path="/lista-de-desejos"
+              element={
+                <ProtectedRoute>
+                  <ListaDeDesejos />
+                </ProtectedRoute>
+              }
+            />
+
+            <Route path="/produto-aberto/:id" element={<ProdutoAberto />} />
+
+            <Route
+              path="/meu-perfil"
+              element={
+                <ProtectedRoute>
+                  <ConfiguracoesUsuario />
+                </ProtectedRoute>
+              }
+            />
+
+            <Route path="/cadastro-usuario" element={<PaginaCadastro />} />
+            <Route path="/login" element={<LogIn />} />
+            <Route path="*" element={<div>Página não encontrada</div>} />
+          </Routes>
+        </FavoritoProvider>
       </AuthProvider>
     </BrowserRouter>
   );

@@ -41,3 +41,8 @@
   cursor: pointer;
   background-color: #7a57cb;
 }
+
+.botoes-comprar-favoritos:disabled {
+  opacity: 0.5; 
+  cursor: not-allowed; 
+}
