@@ -11,6 +11,7 @@
   align-items: center;
   z-index: 5;
   margin-right: 30px;
+  height: 420px;
   background-color: transparent;
 }
 
@@ -18,22 +19,59 @@
   transform: scale(1.02);
 }
 
-.genero {
-  color: #996dff;
-  text-transform: uppercase;
-  background-color: transparent;
-  font-family: 'Nerko One', cursive;
-  font-weight: 800;
-  font-style: normal;
-}
-
 .img-card-livro {
   width: 200px;
-  height: 299.85px;
+  height: 300px;
   background-color: transparent;
 }
 
-.descricao-espaco {
+.titulo-card {
   width: 200px;
+  font-size: medium;
   background-color: transparent;
+  margin: 5px 0 0 0 ;
+}
+
+.preco-card{
+  width: 200px;
+  font-size: large;
+  background-color: transparent;
+}
+
+.nome-preco { 
+  display: flex;
+  width: 200px;
+  gap: 10px;
+}
+
+.icone-card {
+  background-color: transparent;
+  size: large;
+}
+
+.botao-card {
+  padding: 10px;
+  background-color: #996dff;
+  border: none;
+  border-radius: 15px;
+  position: relative;
+  min-width: 35px;
+}
+
+.icone-position-absolute {
+  position: absolute;
+  top: 12px;
+  left: 11px;
+}
+
+.botao-card:hover {
+  cursor: pointer;
+  background-color: #7a57cb;
+}
+
+.display-flex-card-livro {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin-top: 8px;
 }

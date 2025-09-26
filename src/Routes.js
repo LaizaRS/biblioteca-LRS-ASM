@@ -7,6 +7,7 @@ import LogIn from './componentes/Log-in/Log-in.js';
 import PaginaCadastro from './componentes/PaginaCadastro/PaginaCadastro.js';
 import { AuthProvider } from './contexts/AuthContext';
 import ProtectedRoute from './routes/ProtectedRoute';
+import ProdutoAberto from './componentes/ProdutoAberto/ProdutoAberto.js';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           ></Route>
           <Route path="/cadastro-usuario" element={<PaginaCadastro />}></Route>
           <Route path="/login" element={<LogIn />}></Route>
+          <Route path="/produto-aberto/:id" element={<ProdutoAberto />}></Route>
           <Route path="*" element={<div>Página não encontrada</div>} />
         </Routes>
       </AuthProvider>
