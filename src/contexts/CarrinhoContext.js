@@ -3,10 +3,6 @@ import { createContext, useContext, useState } from "react";
 const CarrinhoContext = createContext();
 export const useCarrinho = () => useContext(CarrinhoContext);
 
-/**
- * Normaliza strings de preço para number.
- * Aceita "R$ 1.234,56", "12,34", "1234.56" e number.
- */
 export const parsePreco = (value) => {
   if (typeof value === "number") return value;
   if (!value && value !== 0) return 0;
@@ -34,10 +30,12 @@ export const CarrinhoProvider = ({ children }) => {
     setItemCarrinho((prev) => {
       const existe = prev.some((i) => i.id === livro.id);
       if (existe) {
-        // remove
+        // remove do carrinho
         return prev.filter((i) => i.id !== livro.id);
       } else {
-        // adiciona com precoNumber e quantidade padrão = 1
+        // não adiciona se não tem estoque
+        if (livro.estoque === 0) return prev;
+
         const livroComPrecoNum = {
           ...livro,
           precoNumber: parsePreco(livro.preco),
@@ -50,9 +48,15 @@ export const CarrinhoProvider = ({ children }) => {
 
   const incrementarQuantidade = (id) => {
     setItemCarrinho((prev) =>
-      prev.map((item) =>
-        item.id === id ? { ...item, quantidade: (item.quantidade || 1) + 1 } : item
-      )
+      prev.map((item) => {
+        if (item.id !== id) return item;
+
+        const q = item.quantidade || 1;
+        // não deixar passar do estoque
+        if (q >= item.estoque) return item;
+
+        return { ...item, quantidade: q + 1 };
+      })
     );
   };
 

@@ -37,8 +37,9 @@ const ItemCarrinho = ({ livro }) => {
 
             <button
               className="botao-mais-carrinho"
-              onClick={() => incrementarQuantidade(livro.id)}
               aria-label={`Aumentar quantidade de ${livro.titulo}`}
+               onClick={() => incrementarQuantidade(livro.id)}
+              disabled={livro.quantidade >= livro.estoque}
             >
               +
             </button>
