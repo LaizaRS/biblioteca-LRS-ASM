@@ -10,9 +10,12 @@ const ProdutoAberto = () => {
   const { user } = useAuth();
   const { id } = useParams();
   const livroById = livros.find((livro) => livro.id === Number(id));
+  
 
   const { favoritos, toggleFavorito } = useFavorito();
   const { itemCarrinho, toggleItemCarrinho } = useCarrinho();
+  const itemNoCarrinho = itemCarrinho.find((item) => item.id === livroById.id);
+  const quantidadeNoCarrinho = itemNoCarrinho ? itemNoCarrinho.quantidade : 0; 
 
   if (!livroById) {
     return <p>Livro não encontrado!</p>;
@@ -45,7 +48,7 @@ const ProdutoAberto = () => {
           <div className="display-flex-produtos-abertos">
         
             <button
-              disabled={!user}
+              disabled={!user || quantidadeNoCarrinho >= livroById.estoque}
               className="botoes-comprar-favoritos"
               onClick={() => toggleItemCarrinho(livroById)}
             >

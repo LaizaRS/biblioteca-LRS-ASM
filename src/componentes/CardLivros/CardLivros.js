@@ -9,6 +9,7 @@ const CardLivros = ({ generoSelecionado, autorSelecionado, livros }) => {
   const { user } = useAuth();
   const { favoritos, toggleFavorito } = useFavorito();
   const { itemCarrinho, toggleItemCarrinho } = useCarrinho();
+
   const navigate = useNavigate();
 
   const livrosFiltrados = livros.filter((livro) => {
@@ -17,6 +18,8 @@ const CardLivros = ({ generoSelecionado, autorSelecionado, livros }) => {
       (autorSelecionado === '' || livro.autor.nome === autorSelecionado)
     );
   });
+  const itemNoCarrinho = itemCarrinho.find((item) => item.id === livrosFiltrados.id);
+  const quantidadeNoCarrinho = itemNoCarrinho ? itemNoCarrinho.quantidade : 0;
 
   return (
     <div className="estante-de-livros">
@@ -47,8 +50,8 @@ const CardLivros = ({ generoSelecionado, autorSelecionado, livros }) => {
                     toggleItemCarrinho(livro);
                   }}
                   title={estaNoCarrinho ? 'Remover do carrinho' : 'Adicionar ao carrinho'}
-                  disabled={!user}
-                  className="botao-card"
+                  disabled={!user || quantidadeNoCarrinho >= livro.estoque}
+                  className="botao-card botao-comprar-card"
                 >
                   {estaNoCarrinho ? (
                     <FaShoppingCart className="icone-card" />
