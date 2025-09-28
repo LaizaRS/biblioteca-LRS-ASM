@@ -21,6 +21,7 @@
 
 }
 
+.valor-total-carrinho h2,
 .cabecalho-carrinho h2,
 .cabecalho-carrinho strong {
   background-color: #18181B;
@@ -52,7 +53,6 @@
 .rodape-carrinho {
   border-top: 1px solid #464646;
   background-color: #18181B;
-
 }
 
 .valor-total-carrinho {
@@ -61,10 +61,6 @@
   align-items: center;
   justify-content: space-around;
   padding: 20px;
-}
-
-.valor-total-carrinho h2 {
-    background-color: #18181B;
 }
 
 .botao-finalizar-compra {
@@ -80,4 +76,9 @@
 .botao-finalizar-compra:hover {
   cursor: pointer;
   background-color: #7a57cb;
+}
+
+.carrinho-vazio{
+  background-color: #18181B;
+  text-align: center;
 }

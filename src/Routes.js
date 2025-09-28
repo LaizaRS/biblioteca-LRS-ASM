@@ -7,6 +7,7 @@ import LogIn from './componentes/Log-in/Log-in.js';
 import PaginaCadastro from './componentes/PaginaCadastro/PaginaCadastro.js';
 import { AuthProvider } from './contexts/AuthContext';
 import { FavoritoProvider } from './contexts/Favoritos.js';
+import { CarrinhoProvider } from './contexts/CarrinhoContext.js';
 
 import ProdutoAberto from './componentes/ProdutoAberto/ProdutoAberto.js';
 import ProtectedRoute from './routes/ProtectedRoute';
@@ -15,6 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
+        <CarrinhoProvider>
         <FavoritoProvider>
           <Routes className="app">
             <Route path="/" element={<LayoutTelaPrincipal />} />
@@ -44,6 +46,7 @@ function App() {
             <Route path="*" element={<div>Página não encontrada</div>} />
           </Routes>
         </FavoritoProvider>
+        </CarrinhoProvider>
       </AuthProvider>
     </BrowserRouter>
   );

@@ -1,26 +1,47 @@
-import livros from '../../json/livros.json';
-import './ItemCarrinho.css';
+import { useCarrinho, parsePreco } from "../../contexts/CarrinhoContext";
+import "./ItemCarrinho.css";
 
-const ItemCarrinho = ({ idLivro }) => {
-  // procura o livro pelo id
-  const livroPeloId = livros.find((livro) => livro.id === idLivro);
+const ItemCarrinho = ({ livro }) => {
+  const {
+    incrementarQuantidade,
+    decrementarQuantidade,
+  } = useCarrinho();
 
-  if (!livroPeloId) {
-    return <p>Livro não encontrado</p>;
-  }
+  const quantidade = livro.quantidade ?? 1;
+  const precoUnit =
+    typeof livro.precoNumber === "number" ? livro.precoNumber : parsePreco(livro.preco);
+  const subtotal = precoUnit * quantidade;
 
   return (
     <div className="item-estante-carrinho">
-      <img className="img-carrinho" src={livroPeloId.link_imagem} alt={livroPeloId.titulo} />
+      <img className="img-carrinho" src={livro.link_imagem} alt={livro.titulo} />
 
       <div className="informacoes-carrinho">
-        <h3 className="nome-estante-carrinho">{livroPeloId.titulo}</h3>
+        <h3 className="nome-estante-carrinho">{livro.titulo}</h3>
+
         <div className="valor-e-quantidade">
-          <h2 className='valor-carrinho'>R${livroPeloId.preco}</h2>
+          <div >
+            <p className="valor-carrinho">R$ {precoUnit.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</p>
+          </div>
+
           <div className="controle-quantidade-carrinho">
-            <button className="botao-mais-carrinho"> + </button>
-            <p className="quantidade-carrinho">2</p>
-            <button className="botao-menos-carrinho"> - </button>
+            <button
+              className="botao-menos-carrinho"
+              onClick={() => decrementarQuantidade(livro.id)}
+              aria-label={`Diminuir quantidade de ${livro.titulo}`}
+            >
+              -
+            </button>
+
+            <span className="quantidade-carrinho">{quantidade}</span>
+
+            <button
+              className="botao-mais-carrinho"
+              onClick={() => incrementarQuantidade(livro.id)}
+              aria-label={`Aumentar quantidade de ${livro.titulo}`}
+            >
+              +
+            </button>
           </div>
         </div>
       </div>

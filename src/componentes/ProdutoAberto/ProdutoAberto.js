@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { useFavorito } from '../../contexts/Favoritos';
+import { useCarrinho } from '../../contexts/CarrinhoContext';
 import livros from '../../json/livros.json';
 import NavBar from '../NavBar/NavBar';
 import './ProdutoAberto.css';
@@ -11,30 +12,46 @@ const ProdutoAberto = () => {
   const livroById = livros.find((livro) => livro.id === Number(id));
 
   const { favoritos, toggleFavorito } = useFavorito();
+  const { itemCarrinho, toggleItemCarrinho } = useCarrinho();
 
   if (!livroById) {
     return <p>Livro não encontrado!</p>;
   }
 
   const isFavorito = favoritos.some((fav) => fav.id === livroById.id);
+  const isNoCarrinho = itemCarrinho.some((item) => item.id === livroById.id);
 
   return (
     <div className="centralizando">
       <NavBar />
       <div className="produto-aberto">
-        <img className="imagem-produto-aberto" src={livroById.link_imagem} alt={livroById.titulo} />
+        <img
+          className="imagem-produto-aberto"
+          src={livroById.link_imagem}
+          alt={livroById.titulo}
+        />
         <div className="direita-produtos-abertos">
           <h1>{livroById.titulo}</h1>
           <div className="display-flex-produtos-abertos">
             <h2>R$ {livroById.preco}</h2>
-            <p className="color-desbotada">Disponível em estoque: {livroById.estoque}</p>
+            <p className="color-desbotada">
+              Disponível em estoque: {livroById.estoque}
+            </p>
           </div>
           <p>Escrito por: {livroById.autor.nome}</p>
           <p>Gênero: {livroById.genero.nome}</p>
           <p>Descrição: {livroById.descricao}</p>
+
           <div className="display-flex-produtos-abertos">
-            <button disabled={!user} className="botoes-comprar-favoritos">
-              Adicionar ao carrinho
+        
+            <button
+              disabled={!user}
+              className="botoes-comprar-favoritos"
+              onClick={() => toggleItemCarrinho(livroById)}
+            >
+              {isNoCarrinho 
+              ? 'Remover do carrinho' 
+              : 'Adicionar ao carrinho'}
             </button>
 
             <button
@@ -42,7 +59,9 @@ const ProdutoAberto = () => {
               onClick={() => toggleFavorito(livroById)}
               disabled={!user}
             >
-              {isFavorito ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}
+              {isFavorito
+                ? 'Remover dos favoritos'
+                : 'Adicionar aos favoritos'}
             </button>
           </div>
         </div>
