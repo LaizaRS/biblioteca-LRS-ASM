@@ -1,4 +1,6 @@
 import { FaCartPlus, FaRegStar, FaShoppingCart, FaStar } from 'react-icons/fa';
+import { FaTrashAlt } from "react-icons/fa";
+
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { useCarrinho } from '../../contexts/CarrinhoContext';
@@ -51,10 +53,10 @@ const CardLivros = ({ generoSelecionado, autorSelecionado, livros }) => {
                   }}
                   title={estaNoCarrinho ? 'Remover do carrinho' : 'Adicionar ao carrinho'}
                   disabled={!user || quantidadeNoCarrinho >= livro.estoque}
-                  className="botao-card botao-comprar-card"
+                  className="botao-card"
                 >
                   {estaNoCarrinho ? (
-                    <FaShoppingCart className="icone-card" />
+                   <FaTrashAlt className="icone-card" />
                   ) : (
                     <FaCartPlus className="icone-card" />
                   )}
