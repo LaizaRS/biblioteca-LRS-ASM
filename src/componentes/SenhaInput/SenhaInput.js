@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { LuEye, LuEyeOff } from 'react-icons/lu';
 import './SenhaInput.css';
 
-const SenhaInput = ({ placeholderSenha, valueSenha, onChangeSenha }) => {
+const SenhaInput = ({ onChangeSenha, valueSenha, ...props }) => {
   const [mostrar, setMostrar] = useState(false);
 
   const alternarVisibilidade = () => {
@@ -13,10 +13,10 @@ const SenhaInput = ({ placeholderSenha, valueSenha, onChangeSenha }) => {
     <div className="input-flex">
       <label>Senha</label>
       <div className="input-senha">
-        <input
+        <input {...props}
           name="senha"
           type={mostrar ? 'text' : 'password'}
-          placeholder={placeholderSenha}
+         
           value={valueSenha}
           onChange={onChangeSenha}
         />

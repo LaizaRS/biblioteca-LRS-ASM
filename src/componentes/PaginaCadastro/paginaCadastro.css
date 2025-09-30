@@ -16,28 +16,20 @@
 .display-flex-formulario-cadastro {
   background-color: transparent;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 
-/* form {
-  z-index: 2;
-  color: #ffffff;
-  background-color: transparent;
-} */
-
-fieldset {
+.cadastro-fieldset-max-widit {
   display: flex;
   flex-direction: column;
   flex: 1 1 300px;
   max-width: 500px;
   gap: 5px;
-
   padding: 15px;
   background-color: transparent;
-  margin: 0 20px 40px 20px;
 }
 
 
@@ -50,6 +42,7 @@ fieldset {
   gap: 20px;
   width: 100%;
   background-color: transparent;
+  margin-top: 40px;
 }
 
 .voltar-login,

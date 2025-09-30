@@ -30,7 +30,7 @@ const PaginaCadastro = () => {
         <div className="formulario-cadastro">
           <form>
             <div className="display-flex-formulario-cadastro">
-              <fieldset>
+              <fieldset className='cadastro-fieldset-max-widit'>
                 <legend>Dados Pessoais</legend>
                 <TextoImput
                   label="Nome"
@@ -69,7 +69,7 @@ const PaginaCadastro = () => {
                 />
               </fieldset>
 
-              <fieldset>
+              <fieldset className='cadastro-fieldset-max-widit'>
                 <legend>Endereço</legend>
                 <TextoImput
                   label="CEP"
@@ -122,7 +122,7 @@ const PaginaCadastro = () => {
                 />
               </fieldset>
 
-              <fieldset>
+              <fieldset className='cadastro-fieldset-max-widit'>
                 <legend>Conta</legend>
                 <TextoImput
                   label="E-mail"

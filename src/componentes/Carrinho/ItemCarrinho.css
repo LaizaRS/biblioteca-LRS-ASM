@@ -1,0 +1,70 @@
+.item-estante-carrinho {
+  height: 104px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #18181B;
+}
+
+.img-carrinho {
+  height: 104px;
+  width: auto;
+  background-color: #18181B;
+}
+
+.informacoes-carrinho {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #18181B;
+}
+
+.nome-estante-carrinho {
+  font-size: large;
+    background-color: #18181B;
+}
+
+.valor-e-quantidade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 247px;
+  background-color: #18181B;
+}
+
+.controle-quantidade-carrinho {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #18181B;
+}
+
+.valor-carrinho{
+  background-color: #18181B;
+}
+
+.quantidade-carrinho {
+  background-color: #18181B;
+   font-size: larger;
+}
+
+.botao-mais-carrinho,
+.botao-menos-carrinho {
+  background-color: transparent;
+  border: 1px solid #8a8a8a;
+  width: 40px;
+  border-radius: 15px;
+  padding: 10px;
+  color: #996dff;
+  font-size: large;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.botao-menos-carrinho:hover,
+.botao-mais-carrinho:hover {
+  border: 1px solid #996dff;
+
+}

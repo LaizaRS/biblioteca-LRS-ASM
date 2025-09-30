@@ -8,6 +8,7 @@ header {
   border-radius: 15px;
   position: absolute;
   z-index: 999;
+  top: 0;
 }
 
 img {
@@ -33,10 +34,10 @@ img {
   background-color: #fff;
   width: 100%;
   border: none;
-  padding: 10px;
   border-radius: 15px;
   color: #996dff;
 }
+
 .lupa-navbar {
   background-color: #996dff33;
   border-radius: 50%;
