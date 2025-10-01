@@ -118,5 +118,26 @@
       "cep": "75144-000",
       "pais": "Brasil"
     }
+  },
+
+  {
+    "id": 7,
+    "nome": "Guilherme Nelson Barros Ribeiro",
+    "nomeSocial": "Guilherme",
+    "cpf": "000.000.000-00",
+    "email": "gui.9789@gmail.com",
+    "telefone": "(13) 99197-6967",
+    "dataNascimento": "1997-06-05",
+    "senha": "123456",
+    "endereco": {
+      "rua": "Otacilia da Luz Brasil",
+      "numero": "10080",
+      "complemento": "casa",
+      "bairro": "Anhaguera",
+      "cidade": "Praia Grande",
+      "estado": "SP",
+      "cep": "11717-300",
+      "pais": "Brasil"
+    }
   }
 ]
