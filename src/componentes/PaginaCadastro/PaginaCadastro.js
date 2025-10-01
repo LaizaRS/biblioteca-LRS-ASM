@@ -23,17 +23,65 @@ const PaginaCadastro = () => {
   const [senha, setSenha] = useState('');
   const [confirmarSenha, setConfirmarSenha] = useState('');
 
+  const handleCadastrarDados = async (e) => {
+    e.preventDefault();
+
+    // Montando o objeto
+    const dadosCadastrados = {
+      nome,
+      nomeSocial,
+      cpf,
+      dataNascimento,
+      telefone,
+      email,
+      senha,
+      endereco: {
+        rua,
+        bairro,
+        complemento,
+        cidade,
+        cep,
+        estado,
+        pais,
+      },
+    };
+
+    console.log('Enviando dados:', dadosCadastrados);
+
+    // try {
+    //   const resposta = await fetch('http://localhost:3001/cadastro', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify(dadosCadastrados),
+    //   });
+
+    //   if (resposta.ok) {
+    //     const resultado = await resposta.json();
+    //     alert('Cadastro realizado com sucesso!');
+    //     console.log('Resposta da API:', resultado);
+    //   } else {
+    //     alert('Erro ao cadastrar. Verifique os dados.');
+    //   }
+    // } catch (erro) {
+    //   console.error('Erro na requisição:', erro);
+    //   alert('Não foi possível conectar ao servidor.');
+    // }
+  };
+
   return (
     <div className="centralizando">
       <div className="pagina-cadastro">
         <h1 className="titulo-cadastro">Faça o seu Cadastro</h1>
         <div className="formulario-cadastro">
-          <form>
+          <form onSubmit={handleCadastrarDados}>
             <div className="display-flex-formulario-cadastro">
-              <fieldset className='cadastro-fieldset-max-widit'>
+              <fieldset className="cadastro-fieldset-max-widit">
                 <legend>Dados Pessoais</legend>
                 <TextoImput
-                  label="Nome"
+                  required
+                  label="Nome *"
                   type="text"
                   placeholder="Digite seu Nome"
                   value={nome}
@@ -47,7 +95,8 @@ const PaginaCadastro = () => {
                   onChange={(e) => setNomeSocial(e.target.value)}
                 />
                 <TextoImput
-                  label="CPF"
+                  required
+                  label="CPF *"
                   type="text"
                   placeholder="Digite seu CPF"
                   value={cpf}
@@ -56,7 +105,6 @@ const PaginaCadastro = () => {
                 <TextoImput
                   label="Data de Nascimento"
                   type="date"
-                  placeholder="Digite sua data de nascimento"
                   value={dataNascimento}
                   onChange={(e) => setDataNascimento(e.target.value)}
                 />
@@ -69,7 +117,7 @@ const PaginaCadastro = () => {
                 />
               </fieldset>
 
-              <fieldset className='cadastro-fieldset-max-widit'>
+              <fieldset className="cadastro-fieldset-max-widit">
                 <legend>Endereço</legend>
                 <TextoImput
                   label="CEP"
@@ -122,9 +170,10 @@ const PaginaCadastro = () => {
                 />
               </fieldset>
 
-              <fieldset className='cadastro-fieldset-max-widit'>
+              <fieldset className="cadastro-fieldset-max-widit">
                 <legend>Conta</legend>
                 <TextoImput
+                  required
                   label="E-mail"
                   type="email"
                   placeholder="Digite o seu e-mail"
@@ -132,12 +181,14 @@ const PaginaCadastro = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <SenhaInput
-                  placeholderSenha="Digite Sua Senha"
+                  required
+                  placeholder="Digite Sua Senha"
                   valueSenha={senha}
                   onChangeSenha={(e) => setSenha(e.target.value)}
                 />
                 <SenhaInput
-                  placeholderSenha="Confirme Sua Senha"
+                  required
+                  placeholder="Confirme Sua Senha"
                   valueSenha={confirmarSenha}
                   onChangeSenha={(e) => setConfirmarSenha(e.target.value)}
                 />
