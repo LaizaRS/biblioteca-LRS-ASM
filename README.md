@@ -14,7 +14,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🎨 Layout  
 
-Você pode visualizar os layouts que serviram de inspiração para o projeto nos links abaixo:  
+Você pode visualizar os layouts que serviram de **inspiração** para o projeto nos links abaixo:  
 
 - **Tela inicial** → [Figma 1](https://www.figma.com/community/file/1291394985565910709) | [Figma 2](https://www.figma.com/community/file/1266028958590001589/recomendacao-de-filme-com-ia-desafio-30)  
 - **Login** → [Figma](https://www.figma.com/community/file/1241116056018043491)  
